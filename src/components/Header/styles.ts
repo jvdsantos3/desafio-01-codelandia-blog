@@ -6,6 +6,10 @@ export const HeaderContainer = styled.header`
       90deg, 
       ${theme.colors['background-01']} 0%, 
       ${theme.colors['background-02']} 100%)`};
+
+  @media (max-width: 1024px) {
+    padding: 0 1.25rem;
+  }
 `
 
 export const HeaderContent = styled.div`
@@ -17,6 +21,10 @@ export const HeaderContent = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 4.5625rem;
+
+  @media (max-width: 425px) {
+    gap: 2.5rem;
+  }
 
   > div {
     width: 100%;
@@ -45,10 +53,22 @@ export const SearchInput = styled.form`
     height: 1.875rem;
     color: ${({ theme }) => theme.colors['dark-40']};
     cursor: pointer;
+
+    @media (max-width: 425px) {
+      width: 0.9375rem;
+      height: 0.9375rem;
+    }
   }
 
   svg {
+    width: 1.875rem;
+    height: 1.875rem;
     cursor: pointer;
+
+    @media (max-width: 425px) {
+      width: 0.9375rem;
+      height: 0.9375rem;
+    }
   }
 
   input {
@@ -57,6 +77,10 @@ export const SearchInput = styled.form`
     background: transparent;
     color: ${({ theme }) => theme.colors['dark-40']};
     font-size: ${({ theme }) => theme.fontSizes.m};
+
+    @media (max-width: 425px) {
+      font-size: ${({ theme }) => theme.fontSizes['mobile-m']};
+    }
 
     &:focus {
       outline: 0;

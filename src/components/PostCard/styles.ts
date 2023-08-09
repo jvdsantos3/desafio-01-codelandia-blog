@@ -18,6 +18,10 @@ export const PostCardHeader = styled.div`
   p {
     color: ${({ theme }) => theme.colors['dark-20']};
     font-size: 1rem;
+
+    @media (max-width: 425px) {
+      font-size: 0.875rem;
+    }
   }
 `
 
@@ -27,6 +31,11 @@ export const HeartButton = styled(HeartStraight)`
   color: ${({ theme }) => theme.colors['brand-color']};
 
   cursor: pointer;
+
+  @media (max-width: 425px) {
+    width: 1.1875rem;
+    height: 1.1875rem;
+  }
 `
 
 export const PostCardContent = styled.div`
@@ -35,8 +44,19 @@ export const PostCardContent = styled.div`
   align-items: flex-start;
   gap: 0.5rem;
 
+  h1 {
+    @media (max-width: 425px) {
+      line-height: 1.625rem;
+    }
+  }
+
   p {
     color: ${({ theme }) => theme.colors['dark-20']};
     font-size: 1.125rem;
+
+    @media (max-width: 425px) {
+      font-size: 0.875rem;
+      line-height: 1.625rem;
+    }
   }
 `

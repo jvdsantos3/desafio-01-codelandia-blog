@@ -28,5 +28,6 @@ export const defaultTheme = {
 
     'mobile-xl': '1.5rem',
     'mobile-l': '1.125rem',
+    'mobile-m': '0.875rem',
   },
 }

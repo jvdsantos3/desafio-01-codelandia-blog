@@ -46,7 +46,7 @@ export function Header({
 
         <SearchInput onSubmit={handleSearchPost}>
           <button>
-            <MagnifyingGlass size={30} />
+            <MagnifyingGlass />
           </button>
           <input
             type="text"
@@ -55,7 +55,7 @@ export function Header({
             onChange={(e) => setSearch(e.target.value)}
           />
           {(search.length > 0 || isEmpty || isFilterd) && (
-            <X size={30} onClick={handleResetList} />
+            <X onClick={handleResetList} />
           )}
         </SearchInput>
       </HeaderContent>

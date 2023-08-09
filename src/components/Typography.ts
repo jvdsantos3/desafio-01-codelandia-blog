@@ -13,7 +13,7 @@ export const TitleText = styled.h1<TitleTextProps>`
   font-size: ${({ size, theme }) => theme.fontSizes[`title-${size ?? 'l'}`]};
   font-weight: ${({ weight }) => weight ?? 400};
 
-  @media (max-width: 414px) {
-    font-size: ${({ size, theme }) => theme.fontSizes[`mobile-${size ?? 'l'}`]};
+  @media (max-width: 425px) {
+    font-size: ${({ theme }) => theme.fontSizes[`mobile-l`]};
   }
 `
